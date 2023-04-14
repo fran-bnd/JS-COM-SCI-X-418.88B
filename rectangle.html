@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">	
+    <title>Calculate area and perimeter of a rectangle</title>
+    <script>
+        // The area of a rectangle is just length times width. 
+        var length = prompt("Enter length");
+        length = parseFloat(length);
+        var width = prompt("Enter width");
+        width = parseFloat(width);
+        var area = length * width;
+        area = parseInt(area);
+        // The perimeter is 2 times length plus 2 times width.
+        var perimeter = (2 * length) + (2 * width);
+        perimeter = parseInt(perimeter);
+        // Results display
+		document.write("<h1>The Rectangle Application</h1>");
+		document.write("Rectangle lenght = " + length + "<br>" +
+				    "Rectangle width = " + width + "<br><br>" +
+					"Rectangle area = " + area + "<br><br>" +
+                    "Rectangle perimeter = " + perimeter + "<br><br>");
+    </script>
+</head>
+<body>
+	Thanks for using our rectangle application.
+</body>
+</html>
