@@ -12,7 +12,7 @@ var getTransaction = function(index) {
 
 var addTransaction = function (type, amount, date) {
    
-    // aux to display the ampunt correctly on the table
+    // aux to display the amount correctly on the table
     var amountDisplay = "";
     if ( type == "deposit"){
         amountDisplay = amount;
@@ -37,7 +37,6 @@ var addTransaction = function (type, amount, date) {
 };
 
 var calculateBalance = function (type, amount, total) {
-    
     if ( type == "deposit"){
         return (total + parseInt(amount));
     } else {
@@ -59,6 +58,6 @@ Note that the updateDisplay function also calls the calculateBalance function of
 This code passes the values it receives from the getTransaction function, and the current balance is returned. 
 
 In the add function in the balance.js file, note that it calls the addTransaction function of the library file, passes it values entered by the user, and doesn’t receive any value in return. 
-Also note that this function can accept variable numbers of arguments, depending on whether the user entered a value for the date. Now, code the addTransaction function in the library file. 
+Also note that this function can accept variable numbers of arguments, depending on whether the user entered a value for the date.
 Assume that it will use today’s date if it isn’t passed a date.
 */
