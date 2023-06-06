@@ -25,11 +25,51 @@ Contact.prototype.displayContact = function() {
 };
 
 Contact.prototype.loadJsonObject = function(obj) {
-    // use json object from storage to populate properties
-
+    // json object from storage to populate properties
+    if (typeof obj === "object") {
+        if (obj.hasOwnProperty("f")) {
+            this.firstName = obj.f;
+        }
+        if (obj.hasOwnProperty("l")) {
+            this.lastName = obj.l;
+        }
+        if (obj.hasOwnProperty("o")) {
+            this.organization = obj.o;
+        }
+        if (obj.hasOwnProperty("p")) {
+            this.phone = obj.p;
+        }
+        if (obj.hasOwnProperty("e")) {
+            this.email = obj.e;
+        }
+    }
 };
 
 Contact.prototype.toJSON = function() {
     // shorten property names for storage
-
+    var json = {};
+    if (typeof this.firstName !== "undefined") {
+        json.f = this.firstName;
+    }
+    if (typeof this.lastName !== "undefined") {
+        json.l = this.lastName;
+    }
+    if (typeof this.organization !== "undefined") {
+        json.o = this.organization;
+    }
+    if (typeof this.phone !== "undefined") {
+        json.p = this.phone;
+    }
+    if (typeof this.email !== "undefined") {
+        json.e = this.email;
+    }
+    return json;
 };
+
+/*
+Code to the toJSON method that shortens the property names (the JSON string above to see what the short names should be).
+
+In the library_contact.js file, the loadJsonObject method uses the object with short names to populate the Contact object’s properties.
+
+Notice that it allows to store a phone number with dashes, slashes, plus signs, etc., but it displays the phone numbers exactly as you enter them.
+*/
