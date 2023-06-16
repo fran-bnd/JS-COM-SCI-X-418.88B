@@ -1,0 +1,56 @@
+1. To include the jQuery libraries in a web page by getting them from another website, you use a/an __Content Delivery Network (CDN)__.
+
+2. The default formatting for jQuery UI widgets is done by the __CSS__ file that's included in the download.
+
+3. To modify the formatting of a carousel that's created by the bxSlider plugin, you can change the styles for the __class__ attributes that are added to the HTML by the plugin.
+
+4. __Accessor__ properties contain functions that read and write data.
+
+5. The replacer parameter of the stringify method accepts a/an  __function__ or an array.
+
+6. The reviver parameter of the parse method is often used to convert date strings to __Date objects__.
+
+7. The load, focus, and submit events are examples of __HTML__ events.
+
+8. The __scope__ chain in JavaScript refers to what can be seen and used by other objects.
+
+9. A/An __closure__ can be used to create a private state that protects an object's properties and methods from being changed or deleted by outside code.
+
+10. Since a variable holds a/an __reference__ to an object, two variables can refer to the same object.
+
+11. The __in__ operator returns true if the specified object has the specified property.
+
+12. The __backslash__ character is the escape character in a regular expression.
+
+13. Items stored in __local__ storage are retained in the browser indefinitely.
+
+14. If you create a variable outside of a function it has __global__ scope.
+
+15. The __MAX_VALUE__ property of the Number object returns the largest positive value that JavaScript can represent.
+
+16. The __toString()__ method of the Number object returns the string for a number with base 10 as the default.
+
+17. When two conditional expressions are connected by the && operator, the second expression isn't evaluated if the first expression is  __false__.
+
+18. The __innerHTML__ property makes it easier to add content to any node in the DOM because that property represents the contents of the node.
+
+19. To check whether the HTML for an application has any errors, you can __validate__ the web page.
+
+20. When the condition that follows is evaluated, it has a value of __true__.
+
+    !isNAN("12.345");
+
+21. This is one way to code a conditional expression that tests whether a Boolean variable named isValid is true:
+    isValid == true;
+Code another way that doesn't require the use of a relational operator.
+    if (isValid) {…};
+
+22. When you're working in ECMAScript5 __strict__ mode, an error is thrown if you forget to code the var keyword in a variable declaration.
+
+23. To format a web page, you use __Cascading Style Sheets__.
+
+24. A CSS rule set consists of a/an __selector__ and one or more rules.
+
+25. To display a string or numeric data in a dialog box, you use the JavaScript __alert()__ method.
+
+
